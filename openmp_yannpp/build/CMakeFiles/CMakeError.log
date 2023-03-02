@@ -1,0 +1,1029 @@
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-ohn542
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_9cc18/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_9cc18.dir/build.make CMakeFiles/cmTC_9cc18.dir/build
+Building C object CMakeFiles/cmTC_9cc18.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_9cc18.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_9cc18.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_9cc18.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-ohn542/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_9cc18.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_9cc18/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-iN82Bc
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_eb29c/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_eb29c.dir/build.make CMakeFiles/cmTC_eb29c.dir/build
+Building CXX object CMakeFiles/cmTC_eb29c.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_eb29c.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_eb29c.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_eb29c.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-iN82Bc/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_eb29c.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_eb29c/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-BpIkdJ
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b7006/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_b7006.dir/build.make CMakeFiles/cmTC_b7006.dir/build
+Building C object CMakeFiles/cmTC_b7006.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -fopenmp=libomp -Wno-unused-command-line-argument  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_b7006.dir/src.c.o -MF CMakeFiles/cmTC_b7006.dir/src.c.o.d -o CMakeFiles/cmTC_b7006.dir/src.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-BpIkdJ/src.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_b7006.dir/src.c.o] Error 1
+make[1]: *** [cmTC_b7006/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-DxHUDv
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4db2d/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4db2d.dir/build.make CMakeFiles/cmTC_4db2d.dir/build
+Building C object CMakeFiles/cmTC_4db2d.dir/CheckFunctionExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -DCHECK_FUNCTION_EXISTS=pthread_create -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_4db2d.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_4db2d.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_4db2d.dir/CheckFunctionExists.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-DxHUDv/CheckFunctionExists.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_4db2d.dir/CheckFunctionExists.c.o] Error 1
+make[1]: *** [cmTC_4db2d/fast] Error 2
+
+
+
+Determining if the function pthread_create exists in the pthread failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-6sjHx3
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f9912/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_f9912.dir/build.make CMakeFiles/cmTC_f9912.dir/build
+Building C object CMakeFiles/cmTC_f9912.dir/CheckFunctionExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -DCHECK_FUNCTION_EXISTS=pthread_create -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_f9912.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_f9912.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_f9912.dir/CheckFunctionExists.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-6sjHx3/CheckFunctionExists.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_f9912.dir/CheckFunctionExists.c.o] Error 1
+make[1]: *** [cmTC_f9912/fast] Error 2
+
+
+
+Determining if compiler accepts -pthread failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-8fTdKc
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_56634/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_56634.dir/build.make CMakeFiles/cmTC_56634.dir/build
+Building C object CMakeFiles/cmTC_56634.dir/CheckForPthreads.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_56634.dir/CheckForPthreads.c.o -MF CMakeFiles/cmTC_56634.dir/CheckForPthreads.c.o.d -o CMakeFiles/cmTC_56634.dir/CheckForPthreads.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-8fTdKc/CheckForPthreads.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_56634.dir/CheckForPthreads.c.o] Error 1
+make[1]: *** [cmTC_56634/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-kj2fr0
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_923aa/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_923aa.dir/build.make CMakeFiles/cmTC_923aa.dir/build
+Building C object CMakeFiles/cmTC_923aa.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_923aa.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_923aa.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_923aa.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-kj2fr0/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_923aa.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_923aa/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-pAkp83
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_687c5/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_687c5.dir/build.make CMakeFiles/cmTC_687c5.dir/build
+Building CXX object CMakeFiles/cmTC_687c5.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++11 -MD -MT CMakeFiles/cmTC_687c5.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_687c5.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_687c5.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-pAkp83/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_687c5.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_687c5/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-iXUVxm
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c166c/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c166c.dir/build.make CMakeFiles/cmTC_c166c.dir/build
+Building C object CMakeFiles/cmTC_c166c.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_c166c.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_c166c.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_c166c.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-iXUVxm/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_c166c.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_c166c/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-uIKqeV
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e473a/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e473a.dir/build.make CMakeFiles/cmTC_e473a.dir/build
+Building CXX object CMakeFiles/cmTC_e473a.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++11 -MD -MT CMakeFiles/cmTC_e473a.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_e473a.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_e473a.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-uIKqeV/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_e473a.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_e473a/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-HpSaH8
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_03bbf/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_03bbf.dir/build.make CMakeFiles/cmTC_03bbf.dir/build
+Building C object CMakeFiles/cmTC_03bbf.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_03bbf.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_03bbf.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_03bbf.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-HpSaH8/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_03bbf.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_03bbf/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-f1hXN3
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_2e6b7/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_2e6b7.dir/build.make CMakeFiles/cmTC_2e6b7.dir/build
+Building CXX object CMakeFiles/cmTC_2e6b7.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_2e6b7.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_2e6b7.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_2e6b7.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-f1hXN3/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_2e6b7.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_2e6b7/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-xnMeAB
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_96a84/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_96a84.dir/build.make CMakeFiles/cmTC_96a84.dir/build
+Building C object CMakeFiles/cmTC_96a84.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_96a84.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_96a84.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_96a84.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-xnMeAB/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_96a84.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_96a84/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-NOQCvj
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_815ec/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_815ec.dir/build.make CMakeFiles/cmTC_815ec.dir/build
+Building CXX object CMakeFiles/cmTC_815ec.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++11 -MD -MT CMakeFiles/cmTC_815ec.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_815ec.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_815ec.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-NOQCvj/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_815ec.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_815ec/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-iPI9zM
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_88d36/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_88d36.dir/build.make CMakeFiles/cmTC_88d36.dir/build
+Building C object CMakeFiles/cmTC_88d36.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_88d36.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_88d36.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_88d36.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-iPI9zM/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_88d36.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_88d36/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-6qRALZ
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_9436d/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_9436d.dir/build.make CMakeFiles/cmTC_9436d.dir/build
+Building CXX object CMakeFiles/cmTC_9436d.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++11 -MD -MT CMakeFiles/cmTC_9436d.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_9436d.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_9436d.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-6qRALZ/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_9436d.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_9436d/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-qEgeYh
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_67a68/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_67a68.dir/build.make CMakeFiles/cmTC_67a68.dir/build
+Building C object CMakeFiles/cmTC_67a68.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_67a68.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_67a68.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_67a68.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-qEgeYh/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_67a68.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_67a68/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-PfePLV
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4acef/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4acef.dir/build.make CMakeFiles/cmTC_4acef.dir/build
+Building CXX object CMakeFiles/cmTC_4acef.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_4acef.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_4acef.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_4acef.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-PfePLV/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_4acef.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_4acef/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-FnIMi7
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_83fea/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_83fea.dir/build.make CMakeFiles/cmTC_83fea.dir/build
+Building C object CMakeFiles/cmTC_83fea.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_83fea.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_83fea.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_83fea.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-FnIMi7/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_83fea.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_83fea/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-R32TVN
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3186f/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_3186f.dir/build.make CMakeFiles/cmTC_3186f.dir/build
+Building CXX object CMakeFiles/cmTC_3186f.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_3186f.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_3186f.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_3186f.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-R32TVN/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_3186f.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_3186f/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-eOgZm8
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d83a9/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d83a9.dir/build.make CMakeFiles/cmTC_d83a9.dir/build
+Building C object CMakeFiles/cmTC_d83a9.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_d83a9.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_d83a9.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_d83a9.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-eOgZm8/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_d83a9.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_d83a9/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-NMsB6D
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_0b434/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_0b434.dir/build.make CMakeFiles/cmTC_0b434.dir/build
+Building CXX object CMakeFiles/cmTC_0b434.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++11 -MD -MT CMakeFiles/cmTC_0b434.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_0b434.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_0b434.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-NMsB6D/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_0b434.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_0b434/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-IH6dKA
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ea361/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ea361.dir/build.make CMakeFiles/cmTC_ea361.dir/build
+Building C object CMakeFiles/cmTC_ea361.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_ea361.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_ea361.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_ea361.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-IH6dKA/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_ea361.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_ea361/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-4mSiu0
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e7913/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e7913.dir/build.make CMakeFiles/cmTC_e7913.dir/build
+Building CXX object CMakeFiles/cmTC_e7913.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++11 -MD -MT CMakeFiles/cmTC_e7913.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_e7913.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_e7913.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-4mSiu0/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_e7913.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_e7913/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-Otl278
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_18146/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_18146.dir/build.make CMakeFiles/cmTC_18146.dir/build
+Building C object CMakeFiles/cmTC_18146.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_18146.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_18146.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_18146.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-Otl278/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_18146.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_18146/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-jQMp5c
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_19bc3/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_19bc3.dir/build.make CMakeFiles/cmTC_19bc3.dir/build
+Building CXX object CMakeFiles/cmTC_19bc3.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_19bc3.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_19bc3.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_19bc3.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-jQMp5c/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_19bc3.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_19bc3/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-051D6H
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_638e2/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_638e2.dir/build.make CMakeFiles/cmTC_638e2.dir/build
+Building C object CMakeFiles/cmTC_638e2.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_638e2.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_638e2.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_638e2.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-051D6H/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_638e2.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_638e2/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-Szy144
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ac87c/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ac87c.dir/build.make CMakeFiles/cmTC_ac87c.dir/build
+Building CXX object CMakeFiles/cmTC_ac87c.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_ac87c.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_ac87c.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_ac87c.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-Szy144/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_ac87c.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_ac87c/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-hyJJoh
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7efb3/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_7efb3.dir/build.make CMakeFiles/cmTC_7efb3.dir/build
+Building C object CMakeFiles/cmTC_7efb3.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_7efb3.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_7efb3.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_7efb3.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-hyJJoh/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_7efb3.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_7efb3/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-BfYmvB
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7aab3/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_7aab3.dir/build.make CMakeFiles/cmTC_7aab3.dir/build
+Building CXX object CMakeFiles/cmTC_7aab3.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++11 -MD -MT CMakeFiles/cmTC_7aab3.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_7aab3.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_7aab3.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-BfYmvB/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_7aab3.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_7aab3/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-MUdUNy
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ad17e/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ad17e.dir/build.make CMakeFiles/cmTC_ad17e.dir/build
+Building C object CMakeFiles/cmTC_ad17e.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_ad17e.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_ad17e.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_ad17e.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-MUdUNy/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_ad17e.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_ad17e/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-fBY2AE
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b7a7a/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_b7a7a.dir/build.make CMakeFiles/cmTC_b7a7a.dir/build
+Building CXX object CMakeFiles/cmTC_b7a7a.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++11 -MD -MT CMakeFiles/cmTC_b7a7a.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_b7a7a.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_b7a7a.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-fBY2AE/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_b7a7a.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_b7a7a/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-fykO8R
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_55d92/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_55d92.dir/build.make CMakeFiles/cmTC_55d92.dir/build
+Building C object CMakeFiles/cmTC_55d92.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_55d92.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_55d92.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_55d92.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-fykO8R/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_55d92.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_55d92/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-NnCvpf
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4aa7c/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4aa7c.dir/build.make CMakeFiles/cmTC_4aa7c.dir/build
+Building CXX object CMakeFiles/cmTC_4aa7c.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_4aa7c.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_4aa7c.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_4aa7c.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-NnCvpf/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_4aa7c.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_4aa7c/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-UtXrue
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_34427/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_34427.dir/build.make CMakeFiles/cmTC_34427.dir/build
+Building C object CMakeFiles/cmTC_34427.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_34427.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_34427.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_34427.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-UtXrue/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_34427.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_34427/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-BdOQxn
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_98e68/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_98e68.dir/build.make CMakeFiles/cmTC_98e68.dir/build
+Building CXX object CMakeFiles/cmTC_98e68.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_98e68.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_98e68.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_98e68.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-BdOQxn/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_98e68.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_98e68/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-1ABIxP
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4cafb/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4cafb.dir/build.make CMakeFiles/cmTC_4cafb.dir/build
+Building C object CMakeFiles/cmTC_4cafb.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_4cafb.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_4cafb.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_4cafb.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-1ABIxP/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_4cafb.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_4cafb/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-Gae9oH
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_cafbc/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_cafbc.dir/build.make CMakeFiles/cmTC_cafbc.dir/build
+Building CXX object CMakeFiles/cmTC_cafbc.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++11 -MD -MT CMakeFiles/cmTC_cafbc.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_cafbc.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_cafbc.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-Gae9oH/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_cafbc.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_cafbc/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-EcR0NY
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_34c0d/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_34c0d.dir/build.make CMakeFiles/cmTC_34c0d.dir/build
+Building C object CMakeFiles/cmTC_34c0d.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_34c0d.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_34c0d.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_34c0d.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-EcR0NY/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_34c0d.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_34c0d/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-79FAXF
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_0fc64/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_0fc64.dir/build.make CMakeFiles/cmTC_0fc64.dir/build
+Building CXX object CMakeFiles/cmTC_0fc64.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++11 -MD -MT CMakeFiles/cmTC_0fc64.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_0fc64.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_0fc64.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-79FAXF/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_0fc64.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_0fc64/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-2g2m39
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_32bde/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_32bde.dir/build.make CMakeFiles/cmTC_32bde.dir/build
+Building C object CMakeFiles/cmTC_32bde.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_32bde.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_32bde.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_32bde.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-2g2m39/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_32bde.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_32bde/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-3dW5jC
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_204ab/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_204ab.dir/build.make CMakeFiles/cmTC_204ab.dir/build
+Building CXX object CMakeFiles/cmTC_204ab.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_204ab.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_204ab.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_204ab.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-3dW5jC/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_204ab.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_204ab/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-MKK4cy
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_90dd8/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_90dd8.dir/build.make CMakeFiles/cmTC_90dd8.dir/build
+Building C object CMakeFiles/cmTC_90dd8.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_90dd8.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_90dd8.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_90dd8.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-MKK4cy/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_90dd8.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_90dd8/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-xBQGZM
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f023a/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_f023a.dir/build.make CMakeFiles/cmTC_f023a.dir/build
+Building CXX object CMakeFiles/cmTC_f023a.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_f023a.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_f023a.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_f023a.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-xBQGZM/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_f023a.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_f023a/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-zH3M5X
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4c77c/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4c77c.dir/build.make CMakeFiles/cmTC_4c77c.dir/build
+Building C object CMakeFiles/cmTC_4c77c.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_4c77c.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_4c77c.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_4c77c.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-zH3M5X/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_4c77c.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_4c77c/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-Wv3q8o
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7d6dd/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_7d6dd.dir/build.make CMakeFiles/cmTC_7d6dd.dir/build
+Building CXX object CMakeFiles/cmTC_7d6dd.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++11 -MD -MT CMakeFiles/cmTC_7d6dd.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_7d6dd.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_7d6dd.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-Wv3q8o/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_7d6dd.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_7d6dd/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-6j5jjM
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ff995/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ff995.dir/build.make CMakeFiles/cmTC_ff995.dir/build
+Building C object CMakeFiles/cmTC_ff995.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_ff995.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_ff995.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_ff995.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-6j5jjM/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_ff995.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_ff995/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-pAJH9Z
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_15cec/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_15cec.dir/build.make CMakeFiles/cmTC_15cec.dir/build
+Building CXX object CMakeFiles/cmTC_15cec.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++11 -MD -MT CMakeFiles/cmTC_15cec.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_15cec.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_15cec.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-pAJH9Z/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_15cec.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_15cec/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-axQXSO
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_aa1c6/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_aa1c6.dir/build.make CMakeFiles/cmTC_aa1c6.dir/build
+Building C object CMakeFiles/cmTC_aa1c6.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_aa1c6.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_aa1c6.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_aa1c6.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-axQXSO/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_aa1c6.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_aa1c6/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-sDJCmn
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_88b16/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_88b16.dir/build.make CMakeFiles/cmTC_88b16.dir/build
+Building CXX object CMakeFiles/cmTC_88b16.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_88b16.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_88b16.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_88b16.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-sDJCmn/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_88b16.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_88b16/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-ZRFy3n
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d2ef4/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d2ef4.dir/build.make CMakeFiles/cmTC_d2ef4.dir/build
+Building C object CMakeFiles/cmTC_d2ef4.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_d2ef4.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_d2ef4.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_d2ef4.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-ZRFy3n/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_d2ef4.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_d2ef4/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-yWtuoO
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d5d2c/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d5d2c.dir/build.make CMakeFiles/cmTC_d5d2c.dir/build
+Building CXX object CMakeFiles/cmTC_d5d2c.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_d5d2c.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_d5d2c.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_d5d2c.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-yWtuoO/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_d5d2c.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_d5d2c/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-jhIjJW
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_1bf6d/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_1bf6d.dir/build.make CMakeFiles/cmTC_1bf6d.dir/build
+Building C object CMakeFiles/cmTC_1bf6d.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_1bf6d.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_1bf6d.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_1bf6d.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-jhIjJW/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_1bf6d.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_1bf6d/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-LA2L6E
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_78ffb/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_78ffb.dir/build.make CMakeFiles/cmTC_78ffb.dir/build
+Building CXX object CMakeFiles/cmTC_78ffb.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++11 -MD -MT CMakeFiles/cmTC_78ffb.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_78ffb.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_78ffb.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-LA2L6E/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_78ffb.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_78ffb/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-WlWIVk
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3897a/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_3897a.dir/build.make CMakeFiles/cmTC_3897a.dir/build
+Building C object CMakeFiles/cmTC_3897a.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_3897a.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_3897a.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_3897a.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-WlWIVk/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_3897a.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_3897a/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-DlGEsT
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_9a173/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_9a173.dir/build.make CMakeFiles/cmTC_9a173.dir/build
+Building CXX object CMakeFiles/cmTC_9a173.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++11 -MD -MT CMakeFiles/cmTC_9a173.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_9a173.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_9a173.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-DlGEsT/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_9a173.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_9a173/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-UT50nk
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6a076/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_6a076.dir/build.make CMakeFiles/cmTC_6a076.dir/build
+Building C object CMakeFiles/cmTC_6a076.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_6a076.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_6a076.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_6a076.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-UT50nk/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_6a076.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_6a076/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-nWYp66
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_0206c/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_0206c.dir/build.make CMakeFiles/cmTC_0206c.dir/build
+Building CXX object CMakeFiles/cmTC_0206c.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_0206c.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_0206c.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_0206c.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-nWYp66/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_0206c.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_0206c/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-qhCjzZ
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3db89/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_3db89.dir/build.make CMakeFiles/cmTC_3db89.dir/build
+Building C object CMakeFiles/cmTC_3db89.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_3db89.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_3db89.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_3db89.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-qhCjzZ/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_3db89.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_3db89/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-FKf09Y
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6c365/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_6c365.dir/build.make CMakeFiles/cmTC_6c365.dir/build
+Building CXX object CMakeFiles/cmTC_6c365.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_6c365.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_6c365.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_6c365.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-FKf09Y/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_6c365.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_6c365/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-Pt4A7w
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_0451a/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_0451a.dir/build.make CMakeFiles/cmTC_0451a.dir/build
+Building C object CMakeFiles/cmTC_0451a.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_0451a.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_0451a.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_0451a.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-Pt4A7w/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_0451a.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_0451a/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-wyvwW6
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_84bc0/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_84bc0.dir/build.make CMakeFiles/cmTC_84bc0.dir/build
+Building CXX object CMakeFiles/cmTC_84bc0.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++11 -MD -MT CMakeFiles/cmTC_84bc0.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_84bc0.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_84bc0.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-wyvwW6/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_84bc0.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_84bc0/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-U287MB
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a32e3/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a32e3.dir/build.make CMakeFiles/cmTC_a32e3.dir/build
+Building C object CMakeFiles/cmTC_a32e3.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_a32e3.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_a32e3.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_a32e3.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-U287MB/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_a32e3.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_a32e3/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-Iww1La
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_9ed72/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_9ed72.dir/build.make CMakeFiles/cmTC_9ed72.dir/build
+Building CXX object CMakeFiles/cmTC_9ed72.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++11 -MD -MT CMakeFiles/cmTC_9ed72.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_9ed72.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_9ed72.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-Iww1La/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_9ed72.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_9ed72/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-1UHf6b
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ff212/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ff212.dir/build.make CMakeFiles/cmTC_ff212.dir/build
+Building C object CMakeFiles/cmTC_ff212.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_ff212.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_ff212.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_ff212.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-1UHf6b/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_ff212.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_ff212/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-Uc7GYf
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e2dc6/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e2dc6.dir/build.make CMakeFiles/cmTC_e2dc6.dir/build
+Building CXX object CMakeFiles/cmTC_e2dc6.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_e2dc6.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_e2dc6.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_e2dc6.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-Uc7GYf/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_e2dc6.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_e2dc6/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-4Qoqwb
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8dbe2/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_8dbe2.dir/build.make CMakeFiles/cmTC_8dbe2.dir/build
+Building C object CMakeFiles/cmTC_8dbe2.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_8dbe2.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_8dbe2.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_8dbe2.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-4Qoqwb/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_8dbe2.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_8dbe2/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-RhAKhR
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_50a9e/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_50a9e.dir/build.make CMakeFiles/cmTC_50a9e.dir/build
+Building CXX object CMakeFiles/cmTC_50a9e.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_50a9e.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_50a9e.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_50a9e.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-RhAKhR/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_50a9e.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_50a9e/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-dB2gh5
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_661b8/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_661b8.dir/build.make CMakeFiles/cmTC_661b8.dir/build
+Building C object CMakeFiles/cmTC_661b8.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_661b8.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_661b8.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_661b8.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-dB2gh5/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_661b8.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_661b8/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-JsD5xv
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ceea4/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ceea4.dir/build.make CMakeFiles/cmTC_ceea4.dir/build
+Building CXX object CMakeFiles/cmTC_ceea4.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++11 -MD -MT CMakeFiles/cmTC_ceea4.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_ceea4.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_ceea4.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-JsD5xv/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_ceea4.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_ceea4/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-0IsFqS
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_396d4/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_396d4.dir/build.make CMakeFiles/cmTC_396d4.dir/build
+Building C object CMakeFiles/cmTC_396d4.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_396d4.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_396d4.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_396d4.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-0IsFqS/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_396d4.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_396d4/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-ZaeQPp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_94912/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_94912.dir/build.make CMakeFiles/cmTC_94912.dir/build
+Building CXX object CMakeFiles/cmTC_94912.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++11 -MD -MT CMakeFiles/cmTC_94912.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_94912.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_94912.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-ZaeQPp/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_94912.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_94912/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-S2VfQD
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_75514/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_75514.dir/build.make CMakeFiles/cmTC_75514.dir/build
+Building C object CMakeFiles/cmTC_75514.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_75514.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_75514.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_75514.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-S2VfQD/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_75514.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_75514/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-nesebI
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8ba47/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_8ba47.dir/build.make CMakeFiles/cmTC_8ba47.dir/build
+Building CXX object CMakeFiles/cmTC_8ba47.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_8ba47.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_8ba47.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_8ba47.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-nesebI/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_8ba47.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_8ba47/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-UVbwGl
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_71d9c/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_71d9c.dir/build.make CMakeFiles/cmTC_71d9c.dir/build
+Building C object CMakeFiles/cmTC_71d9c.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_71d9c.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_71d9c.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_71d9c.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-UVbwGl/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_71d9c.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_71d9c/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-EnN1wl
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3f72c/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_3f72c.dir/build.make CMakeFiles/cmTC_3f72c.dir/build
+Building CXX object CMakeFiles/cmTC_3f72c.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_3f72c.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_3f72c.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_3f72c.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-EnN1wl/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_3f72c.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_3f72c/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-5Qx4bX
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c9d99/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c9d99.dir/build.make CMakeFiles/cmTC_c9d99.dir/build
+Building C object CMakeFiles/cmTC_c9d99.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_c9d99.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_c9d99.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_c9d99.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-5Qx4bX/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_c9d99.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_c9d99/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-DXAPRK
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_451b2/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_451b2.dir/build.make CMakeFiles/cmTC_451b2.dir/build
+Building CXX object CMakeFiles/cmTC_451b2.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++11 -MD -MT CMakeFiles/cmTC_451b2.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_451b2.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_451b2.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-DXAPRK/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_451b2.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_451b2/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-6kdHhO
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_2d784/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_2d784.dir/build.make CMakeFiles/cmTC_2d784.dir/build
+Building C object CMakeFiles/cmTC_2d784.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_2d784.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_2d784.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_2d784.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-6kdHhO/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_2d784.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_2d784/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-wNDijX
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b1d31/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_b1d31.dir/build.make CMakeFiles/cmTC_b1d31.dir/build
+Building CXX object CMakeFiles/cmTC_b1d31.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++11 -MD -MT CMakeFiles/cmTC_b1d31.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_b1d31.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_b1d31.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-wNDijX/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_b1d31.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_b1d31/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-s0dgxM
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_340ea/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_340ea.dir/build.make CMakeFiles/cmTC_340ea.dir/build
+Building C object CMakeFiles/cmTC_340ea.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_340ea.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_340ea.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_340ea.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-s0dgxM/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_340ea.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_340ea/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-Y7Wkwy
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e6c6b/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e6c6b.dir/build.make CMakeFiles/cmTC_e6c6b.dir/build
+Building CXX object CMakeFiles/cmTC_e6c6b.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_e6c6b.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_e6c6b.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_e6c6b.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-Y7Wkwy/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_e6c6b.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_e6c6b/fast] Error 2
+
+
+
+Detecting C OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-WDqTLX
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7c944/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_7c944.dir/build.make CMakeFiles/cmTC_7c944.dir/build
+Building C object CMakeFiles/cmTC_7c944.dir/OpenMPCheckVersion.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_7c944.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_7c944.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_7c944.dir/OpenMPCheckVersion.c.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-WDqTLX/OpenMPCheckVersion.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_7c944.dir/OpenMPCheckVersion.c.o] Error 1
+make[1]: *** [cmTC_7c944/fast] Error 2
+
+
+
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-MnsYtV
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_bf3a8/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_bf3a8.dir/build.make CMakeFiles/cmTC_bf3a8.dir/build
+Building CXX object CMakeFiles/cmTC_bf3a8.dir/OpenMPCheckVersion.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -MD -MT CMakeFiles/cmTC_bf3a8.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_bf3a8.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_bf3a8.dir/OpenMPCheckVersion.cpp.o -c /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/CMakeFiles/CMakeScratch/TryCompile-MnsYtV/OpenMPCheckVersion.cpp
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_bf3a8.dir/OpenMPCheckVersion.cpp.o] Error 1
+make[1]: *** [cmTC_bf3a8/fast] Error 2
+
+
+

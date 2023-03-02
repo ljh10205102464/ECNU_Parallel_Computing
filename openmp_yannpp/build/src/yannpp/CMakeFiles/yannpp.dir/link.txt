@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libyannpp.a CMakeFiles/yannpp.dir/common/cpphelpers.cpp.o CMakeFiles/yannpp.dir/common/log.cpp.o CMakeFiles/yannpp.dir/common/utils.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libyannpp.a

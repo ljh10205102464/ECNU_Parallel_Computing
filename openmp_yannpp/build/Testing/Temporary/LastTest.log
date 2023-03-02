@@ -1,0 +1,99 @@
+Start testing: Nov 16 16:54 CST
+----------------------------------------------------------
+1/1 Testing: YannppTests
+1/1 Test: YannppTests
+Command: "/Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/src/tests/yannpp_tests"
+Directory: /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/build/src/tests
+"YannppTests" start time: Nov 16 16:54 CST
+Output:
+----------------------------------------------------------
+[==========] Running 14 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 11 tests from ConvolutionTests
+[ RUN      ] ConvolutionTests.FeedForwardSamePaddingTest
+[       OK ] ConvolutionTests.FeedForwardSamePaddingTest (35 ms)
+[ RUN      ] ConvolutionTests.FeedForwardValidPaddingTest
+[       OK ] ConvolutionTests.FeedForwardValidPaddingTest (19 ms)
+[ RUN      ] ConvolutionTests.NablaWeightBackpropagateWithSamePaddingTest
+[       OK ] ConvolutionTests.NablaWeightBackpropagateWithSamePaddingTest (67 ms)
+[ RUN      ] ConvolutionTests.NablaBiasBackpropagateWithSamePaddingTest
+[       OK ] ConvolutionTests.NablaBiasBackpropagateWithSamePaddingTest (67 ms)
+[ RUN      ] ConvolutionTests.NablaWeightBackpropagateWithValidPaddingTest
+[       OK ] ConvolutionTests.NablaWeightBackpropagateWithValidPaddingTest (56 ms)
+[ RUN      ] ConvolutionTests.NablaBiasBackpropagateWithValidPaddingTest
+[       OK ] ConvolutionTests.NablaBiasBackpropagateWithValidPaddingTest (55 ms)
+[ RUN      ] ConvolutionTests.NablaWeightBackpropagateMoreThanOnceTest
+[       OK ] ConvolutionTests.NablaWeightBackpropagateMoreThanOnceTest (5715 ms)
+[ RUN      ] ConvolutionTests.NablaBiasBackpropagateMoreThanOnceTest
+[       OK ] ConvolutionTests.NablaBiasBackpropagateMoreThanOnceTest (5637 ms)
+[ RUN      ] ConvolutionTests.ErrorBackpropagateMoreThanOnceTest
+[       OK ] ConvolutionTests.ErrorBackpropagateMoreThanOnceTest (5606 ms)
+[ RUN      ] ConvolutionTests.ErrorBackpropagateWithSamePaddingTest
+[       OK ] ConvolutionTests.ErrorBackpropagateWithSamePaddingTest (68 ms)
+[ RUN      ] ConvolutionTests.ErrorBackpropagateWithValidPaddingTest
+[       OK ] ConvolutionTests.ErrorBackpropagateWithValidPaddingTest (56 ms)
+[----------] 11 tests from ConvolutionTests (17381 ms total)
+
+[----------] 3 tests from MnistTests
+Parsing mnist dataset from directory /Users/ljh/Study/senior1/Parallel_Computing/yannpp-master/data/
+Training data loaded: 60000 images
+[ RUN      ] MnistTests.LearnMnistDenseTest
+Training using 6000 inputs
+Processed batch 0 out of 500
+Processed batch 125 out of 500
+Processed batch 250 out of 500
+Processed batch 375 out of 500
+Epoch 0: 855 / 1000
+Processed batch 0 out of 500
+Processed batch 125 out of 500
+Processed batch 250 out of 500
+Processed batch 375 out of 500
+Epoch 1: 875 / 1000
+End result: 875 / 1000
+[       OK ] MnistTests.LearnMnistDenseTest (22006 ms)
+[ RUN      ] MnistTests.DeepLearningLoopMnistTest
+Training using 2000 inputs
+Processed batch 0 out of 167
+Processed batch 41 out of 167
+Processed batch 82 out of 167
+Processed batch 123 out of 167
+Processed batch 164 out of 167
+Epoch 0: 204 / 334
+Processed batch 0 out of 167
+Processed batch 41 out of 167
+Processed batch 82 out of 167
+Processed batch 123 out of 167
+Processed batch 164 out of 167
+Epoch 1: 273 / 334
+End result: 273 / 334
+[       OK ] MnistTests.DeepLearningLoopMnistTest (348883 ms)
+[ RUN      ] MnistTests.DeepLearning2DMnistTest
+Training using 2000 inputs
+Processed batch 0 out of 167
+Processed batch 41 out of 167
+Processed batch 82 out of 167
+Processed batch 123 out of 167
+Processed batch 164 out of 167
+Epoch 0: 211 / 334
+Processed batch 0 out of 167
+Processed batch 41 out of 167
+Processed batch 82 out of 167
+Processed batch 123 out of 167
+Processed batch 164 out of 167
+Epoch 1: 281 / 334
+End result: 281 / 334
+[       OK ] MnistTests.DeepLearning2DMnistTest (125527 ms)
+[----------] 3 tests from MnistTests (496416 ms total)
+
+[----------] Global test environment tear-down
+[==========] 14 tests from 2 test suites ran. (514973 ms total)
+[  PASSED  ] 14 tests.
+<end of output>
+Test time = 515.51 sec
+----------------------------------------------------------
+Test Passed.
+"YannppTests" end time: Nov 16 17:03 CST
+"YannppTests" time elapsed: 00:08:35
+----------------------------------------------------------
+
+End testing: Nov 16 17:03 CST
